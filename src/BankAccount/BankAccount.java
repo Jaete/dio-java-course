@@ -31,7 +31,7 @@ public class BankAccount {
         }else{
             deposit();
         }
-        System.out.print("Continuar operações?\n1 - Sim \n2 - Não");
+        System.out.print("Continuar operações?\n1 - Sim \n2 - Não\n");
         choice = scan.nextInt();
         if(choice == 1){
             return true;
@@ -54,7 +54,7 @@ public class BankAccount {
         System.out.print("\n\n Quanto deseja depositar?\n");
         float amount = scan.nextFloat();
             balance += amount;
-            System.out.printf("\n\nDepósito concluido! Seu novo saldo é de %f\n\n", balance);
+            System.out.printf("\n\nDepósito concluido! Seu novo saldo é de %.2f\n\n", balance);
     }
 
     public static void main(String[] args) {
@@ -64,7 +64,7 @@ public class BankAccount {
         while(operate == true){
             operate = bank.menu();
         }
-        System.out.print("Encerrando operações!");
-        System.out.print("Até a próxima!");
+        System.out.print("Encerrando operações!\n\n");
+        System.out.print("Até a próxima!\n\n");
     }
 }
