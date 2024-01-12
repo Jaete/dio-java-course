@@ -64,6 +64,7 @@ public class BankAccount {
         while(operate == true){
             operate = bank.menu();
         }
+        System.out.print("Encerrando operações!");
         System.out.print("Até a próxima!");
     }
 }
